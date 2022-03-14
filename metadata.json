@@ -1,4 +1,7 @@
 {
   "asmEntry": "asm.js",
-  "entry": "index.js"
+  "entry": "index.js",
+  "asmExposedFunctions": {
+    "toggleFire": "f1.js"
+  }
 }
