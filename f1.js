@@ -1,5 +1,8 @@
-import { toggle } from "./constants";
+import { Loader, toggle } from "./constants";
 
 export default () => {
-  return toggle.toggle;
+  const isPatcher = Loader.isModLoaded("patcher");
+  if (!isPatcher) return toggle.toggle;
+
+  return false;
 };
